@@ -209,5 +209,5 @@ class UsuarioRegisterActivateView(RedirectView):
         self.object.is_active = True
         self.object.save()
         login(self.request, self.object)
-        messages.success(self.request, 'Obrigado por acessar o VitaPel | UFN. Esta é a sua área restrita de acompanhamento de Agendas e Treinos.')
+        messages.success(self.request, 'Obrigado por acessar o SIGA | UFN. Esta é a sua área restrita de acompanhamento de Agendas.')
         return reverse('apppaciente_home')

@@ -12,7 +12,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="{% url 'home' %}">
-        <img src="{% static 'core/img/banner1_transparent.png' %}" class="img-fluid" style="max-width: 70px;">
+        <img src="{% static 'core/img/faviconSIGA.png' %}" class="img-fluid" style="max-width: 30px;">
       </a>
     </div>
 
@@ -22,15 +22,11 @@
         <li class=""><a href="{% url 'home' %}"> {% bootstrap_icon 'home' %} Home <span class="sr-only">(current)</span></a></li>
 
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{% bootstrap_icon 'edit' %} Eu fisioterapeuta <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{% bootstrap_icon 'edit' %} Eu profissional <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="{% url 'apppaciente_dados_update' %}">{% bootstrap_icon 'user' %} Dados pessoais</a></li>
             <li><a href="{% url 'usuario_paciente_list' %}">{% bootstrap_icon 'book' %} Meus Pacientes</a></li>
-            <li><a href="{% url 'agenda_minha_list' %}">{% bootstrap_icon 'calendar' %} Minhas agendas</a></li>
-            <li><a href="{% url 'treino_meu_list' %}">{% bootstrap_icon 'record' %} Meus treinos montados</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="{% url 'artigo_list' %}">{% bootstrap_icon 'pencil' %} Artigos</a></li>  
-            <li><a href="{% url 'exercicio_list' %}">{% bootstrap_icon 'fire' %} Exercicios </a></li>  
+            <li><a href="{% url 'agenda_minha_list' %}">{% bootstrap_icon 'calendar' %} Minhas agendas</a></li>                        
           </ul>
         </li>
 
@@ -38,12 +34,8 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{% bootstrap_icon 'cog' %} Gestão básica <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="{% url 'usuario_list' %}">{% bootstrap_icon 'user' %} Usuários</a></li> 
-              <li><a href="{% url 'treino_list' %}">{% bootstrap_icon 'record' %} Treinamentos</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="{% url 'profissao_list' %}">{% bootstrap_icon 'tags' %} Profissões</a></li>            
-              <li><a href="{% url 'instituicao_list' %}">{% bootstrap_icon 'briefcase' %} Clínicas</a></li>               
-              <li><a href="{% url 'renda_list' %}">{% bootstrap_icon 'usd' %} Rendas</a></li>
+              <li><a href="{% url 'usuario_list' %}">{% bootstrap_icon 'user' %} Usuários</a></li>               
+              <li><a href="{% url 'instituicao_list' %}">{% bootstrap_icon 'briefcase' %} Clínicas</a></li>                             
             </ul>
           </li>
         {% endif %}
@@ -57,7 +49,7 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{% bootstrap_icon 'wrench' %} Suporte <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="mailto:vitapel@ufn.edu.br" target="_blank">vitapel@ufn.edu.br</a></li>
+            <li><a href="mailto:lapinf@ufn.edu.br" target="_blank">lapinf@ufn.edu.br</a></li>
           </ul>
         </li> 
         <li><a href="{% url 'about' %}">{% bootstrap_icon 'question-sign' %} Sobre</a></li>

@@ -3,43 +3,23 @@
 Projeto de alunos voluntários do Laboratório de Práticas para gestão de agendas em clínica de Pilates
 
 PENDENCIAS
-    - 
-    -
-    -
+    - app servicos (CRIAR DO ZERO)
+    
+    
 
-- apps
-    - profissoa usuario
-        - descrição
-        - is_active
-        - slug
 
-    - renda
-        - descricao
-        - valor_salario_minimo
-        - is_active
-        - slug
-            - depois de feito o app, cadastrar no banco de dados
-                Sem renda
-                Até 0,5 salário mínimo 
-                De 0,5 a 1 salário mínimo 
-                De 1 a 2 salários mínimos 
-                De 2 a 3 salários mínimos 
-                De 3 a 5 salários mínimos 
-                De 5 a 10 salários mínimos 
-                Acima de 10 salários mínimos 
-                Prefere não informar
 
     - usuario
-        - tipos: administrador, fisioterapeuta, paciente vinculo com tipo usuário
+        - (REVER) tipos: administrador, fisioterapeuta, paciente vinculo com tipo usuário
         - nome
         - email (chave primária)
         - celular
         - cpf
         - data_nascimento
-        - instituição vinculo com instituição
+        - (REVER)instituição vinculo com instituição
         - is_active
         - slug
-        - escolaridade (null=True, blank=False)
+        - (RETIRAR) escolaridade (null=True, blank=False)
             Não Alfabetizado
             Ensino Fundamental Incompleto
             Ensino Fundamental Completo
@@ -50,12 +30,12 @@ PENDENCIAS
             Pós-graduação Completa
             Mestrado Completo
             Doutorado Completo
-        - renda vinculo com renda (null=True, blank=False)
-        - possui filhos? (null=True, blank=False)
+        - (RETIRAR)renda vinculo com renda (null=True, blank=False)
+        - (RETIRAR)possui filhos? (null=True, blank=False)
             Sim, tenho filhos que demandam minha atenção
             Não, não tenho filhos que demandam minha atenção
             Não tenho filhos
-        - jornada de trabalho semanal (null=True, blank=False)
+        - (RETIRAR)jornada de trabalho semanal (null=True, blank=False)
             Até 10 horas semanais
             De 11 a 20 horas semanais
             De 21 a 30 horas semanais
@@ -64,7 +44,7 @@ PENDENCIAS
             Mais de 44 horas semanais
             Não estou trabalhando atualmente
 
-    -  instituição/clinica
+    - (REVER) instituição/clinica
         - nome
         - sigla (opcional)
         - cidade
@@ -82,7 +62,7 @@ PENDENCIAS
         - slug
         - usuario que carregou, mas com visualização do administrador/coordenador
 
-    - profissao
+    - (RETIRAR) profissao
         - descricao
         - is_active
         - slug
@@ -104,7 +84,7 @@ PENDENCIAS
         - realizado
         - cronograma de treino (período; dataInicio a dataFim + vezes a fazer)
 
-    - agenda
+    - agenda (REVER)
         - paciente vinculo com usuario do tipo paciente
         - fisio vinculo com usuario do tipo fisio
         - data
@@ -116,9 +96,6 @@ Sugestões de CSS
     - https://bootswatch.com/3/
 
 Icons bootstrap - https://www.w3schools.com/icons/bootstrap_icons_glyphicons.asp
-
-
-
 
 # .env
 
@@ -137,3 +114,4 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
 EMAIL_USE_STARTTLS = False
+GEMINI_API_KEY = ''
