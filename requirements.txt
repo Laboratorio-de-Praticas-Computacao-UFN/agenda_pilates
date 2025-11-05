@@ -4,7 +4,7 @@ asn1crypto==1.5.1
 # backports.zoneinfo
 bcrypt==4.1.3
 certifi==2024.7.4
-cffi==1.16.0
+cffi
 chardet==5.2.0
 charset-normalizer==3.3.2
 click==8.1.7
